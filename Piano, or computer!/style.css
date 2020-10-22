@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("piano.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#heading {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Asap', sans-serif;
+}
+
+#intro-para {
+    font-size: larger;
+}
+
+#keys {
+    width: 100%;
+    margin: auto;
+}
+
+.key {
+    width: 100px;
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    text-align: center;
+    height: 100px;
+    padding-top: 33px;
+    margin-left: 100px;
+}
+
+.key:hover {
+    background-color: red;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.keyPressed {
+    background-color: red;
+    font-size: larger;
+    cursor: pointer;
+}

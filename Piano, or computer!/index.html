@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1 id="heading">A Piano, for free!</h1>
+        <p id="intro-para">
+            Is a piano too expensive for you? Don't worry, We have you covered! Just press A, B, C, D, E, F or G with your mouse or your keyboard!
+        </p>
+    </header>
+
+    <!-- The divs which will have borders around them as a sound-making circle -->
+    <div id="keys">
+        <div id="a" class="key">
+            A
+            <audio id="a-sound">
+                <source src="Dog-barking-sound.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="b" class="key">
+            B
+            <audio id="b-sound">
+                <source src="Duck-quack.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="c" class="key">
+            C
+            <audio id="c-sound">
+                <source src="tiger.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="d" class="key">
+            D
+            <audio id="d-sound">
+                <source src="rabbit.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="e" class="key">
+            E
+            <audio id="e-sound">
+                <source src="water.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="f" class="key">
+            F
+            <audio id="f-sound">
+                <source src="air.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="g" class="key">
+            G
+            <audio id="g-sound">
+                <source src="dolphin.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

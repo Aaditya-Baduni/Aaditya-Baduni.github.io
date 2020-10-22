@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <!-- Scoreboard -->
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>  
+    </div>
+
+    <!-- Result -->
+    <div class="result">
+        <p>Paper covers rock. You win!</p>
+    </div>
+
+    <!-- Choices (rock, paper, scissors images) -->
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="https://img.icons8.com/color/48/000000/hand-rock.png" alt="rock" height="200px"/>
+        </div>
+        <div class="choice" id="p">
+            <img src="https://img.icons8.com/fluent/48/000000/hand.png" alt="paper" height="200px"/>
+        </div>
+        <div class="choice" id="s">
+            <img src="https://img.icons8.com/emoji/48/000000/victory-hand-light-skin-tone.png" alt="scissor" height="200px"/>
+        </div>
+    </div>
+
+    <!-- Action message -->
+    <p id="action-message">Make your move.</p>
+
+    <script src="app.js"></script>
+</body>
+</html>
