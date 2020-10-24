@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Page not Found</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap'); /*Asap font italics*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(41,44,52);
+        }
+
+        #header {
+            background: white;
+            padding: 15px;
+        }
+
+        #heading {
+            font-family: 'Asap', sans-serif;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        #go-to {
+            color: white;
+            margin: 20px 10px;
+            font-size: 20px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: inherit;
+        }
+
+        a:link {
+            color: inherit;
+        }
+
+        a:hover {
+            color: rgb(101, 187, 216);
+        }
+    </style>
 </head>
 <body>
-    <h1>Sorry! Page not found</h1>
-    Go <a href="index.html">here</a> to see our site
+    <header id="header">
+        <p id="heading">Sorry! Page not found! Error 404!</p>
+    </header>
+
+    <p id="go-to">
+        Click <a href="index.html">here</a> to go to our site.
+    </p>
 </body>
 </html>
