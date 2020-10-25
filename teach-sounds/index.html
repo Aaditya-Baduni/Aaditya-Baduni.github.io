@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1 id="heading">Teach sounds to children</h1>
+        <p id="intro-para">
+            What does a dog sound like? What about a pig? Find out!
+        </p>
+    </header>
+
+    <!-- The divs which will have borders around them as a sound-making circle -->
+    <div id="keys">
+        <div id="dog" class="key">
+            Dog
+            <audio id="dog-sound">
+                <source src="bark.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="cat" class="key">
+            Cat
+            <audio id="cat-sound">
+                <source src="meow.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="goat" class="key">
+            Goat
+            <audio id="goat-sound">
+                <source src="goat.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="pig" class="key">
+            Pig
+            <audio id="pig-sound">
+                <source src="pig-grunt.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
