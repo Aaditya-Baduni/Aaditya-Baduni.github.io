@@ -108,3 +108,11 @@ treeImage.addEventListener("click", function() {
         }
     } 
 });
+
+window.addEventListener("click", function() {
+    if(userScore == 5) {
+        result_para.innerText = "You win the game!!!";
+        result_para.classList.add("win");
+        result_para.addEventListener("transitionend", () => removeClass(result_para, "win"));
+    }
+});
