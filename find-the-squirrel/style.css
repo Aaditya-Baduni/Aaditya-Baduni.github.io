@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(41,44,52);
+}
+
+#header {
+    text-align: center;
+    background: white;
+    padding: 15px;
+}
+
+#heading {
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+#intro {
+    font-size: 20px;
+}
+
+#tree-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 10px ridge red;
+    width: 75%;
+    z-index: 0;
+}
+
+.squirrel {
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    opacity: 70%;
+}
+
+#squirrel-1 {
+    height: 60px;
+    top: 500px;
+    left: 600px;
+    visibility: visible;
+}
+
+#squirrel-2 {
+    height: 50px;   
+    top: 625px;
+    left: 420px;
+    visibility: visible;
+}
+
+#squirrel-3 {
+    height: 40px;
+    top: 340px;
+    left: 650px;
+    opacity: 50%;
+    visibility: visible;
+}
+
+#squirrel-4 {
+    height: 35px;
+    top: 500px;
+    left: 300px;
+    opacity: 50%;
+    visibility: visible;
+}
+
+#squirrel-5 {
+    height: 25px;
+    top: 500px;
+    right: 250px;
+    visibility: visible;
+    opacity: 50%;
+}
+
+#score-board {
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    background-color: white;
+    width: 25%;
+    height: 80px;
+    padding: 15px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#result {
+    margin-top: 5px;
+}
+
+.win {
+    transition: all 1s ease-in-out;
+    color: green;
+    font-size: larger;
+}
+
+.lose {
+    transition: all 1s ease-in-out;
+    color: red;
+    font-size: larger;
+}

@@ -29,10 +29,6 @@ a:hover {
     border-right: 3px solid white;
 }
 
-#rps {
-    margin-right: 20px;
-}
-
 #games {
     text-align: center;
     background-color: rgba(255, 255, 255, 1.0);
@@ -56,4 +52,8 @@ a:hover {
 
 #games:hover {
     opacity: 1.0;
+}
+
+.link {
+    margin-right: 20px;
 }
