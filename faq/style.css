@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(180deg, rgba(100, 50, 200, 0.5) , rgba(100, 50, 255, 0.9));
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    user-select: none;
+}
+
+/* The FAQ div box */
+#faq-box {
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 6px 10px 10px 10px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    margin-top: 200px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+#faq-img {
+    float: left;
+    margin-right: 10px;
+}
+
+#questions {
+    margin-top: 10px;
+}
+
+.q:hover {
+    cursor: pointer;
+}
+
+.qna {
+    border-bottom: 1px solid rgb(190, 190, 190);
+    width: max-content;
+    /* clear: left;
+    float: left; */
+    position: absolute;
+    left: 670px;
+}
+
+#a1, #a2, #a3, #a4 {
+    margin: 10px 0px;
+}
