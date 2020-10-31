@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap'); /*Google Asap Italics font*/
+
 * {
     color: white;
 }
@@ -27,6 +29,7 @@ a:hover {
     display: inline-block;
     padding-right: 20px;
     border-right: 3px solid white;
+    font-family: 'Asap', sans-serif;
 }
 
 #games {
@@ -48,6 +51,7 @@ a:hover {
     color: black;
     margin-top: 50px;
     font-size: 200%;
+    font-family: 'Asap', sans-serif;
 }
 
 #games:hover {
