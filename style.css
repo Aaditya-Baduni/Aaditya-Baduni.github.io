@@ -61,3 +61,27 @@ a:hover {
 .link {
     margin-right: 20px;
 }
+
+#games-show {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#squirrel {
+    margin-top: 100px;
+}
+
+.game {
+    opacity: 0.2;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.game:hover {
+    opacity: 1.0;
+}
+
+#faq-link {
+    text-decoration: underline;
+}
