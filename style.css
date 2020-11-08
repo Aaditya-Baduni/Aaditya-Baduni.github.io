@@ -6,6 +6,7 @@
 
 body {
     background-color: black;
+    user-select: none;
 }
 
 #header {
@@ -47,6 +48,10 @@ a:hover {
     transition-timing-function: ease-in-out;
 }
 
+#games:hover {
+    cursor: pointer;
+}
+
 #games-para {
     color: black;
     margin-top: 50px;
@@ -80,6 +85,7 @@ a:hover {
 
 .game:hover {
     opacity: 1.0;
+    cursor: pointer;
 }
 
 #faq-link {
