@@ -1,3 +1,6 @@
+/* Asap, Italics */
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -48,4 +51,18 @@ body {
 
 #a1, #a2, #a3, #a4 {
     margin: 10px 0px;
+}
+
+#link {
+    font-family: 'Asap', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: blue;
+    text-decoration: none;
+}
+
+#link:hover {
+    color: red;
 }
