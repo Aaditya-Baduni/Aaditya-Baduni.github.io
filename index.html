@@ -6,6 +6,42 @@
     <title>Aaditya's Games</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png">
+    <style>
+        a {
+			color: inherit;
+			text-decoration: inherit;
+        }
+        #context-menu a:hover {
+            text-decoration: none;
+        }
+		#context-menu {
+			position: fixed;
+			z-index: 10000;
+			width: 150px;
+			background-color: #1b1a1a;
+			border-radius: 4px;
+			transform: scale(0);
+			transform-origin: top left;
+		}
+		#context-menu.active {
+			transform: transform 200ms ease-in-out;
+			transform: scale(1);
+		}
+		#context-menu .item {
+			padding: 8px 10px;
+			font-size: 15px;
+			color: #eee;
+			border-bottom: 1px solid white;
+		}
+		#context-menu .item:hover {
+			background-color: #555;
+			cursor: pointer;
+        }
+        #squirrel {
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+    </style>
 </head>
 <body>
     <header id="header">
@@ -69,5 +105,60 @@
         </div>
 
     </div>
+
+    <!-- For right click -->
+    <div id="context-menu">
+		<div class="item" id="reload">
+			<i class="fa fa-refresh fa-spin"></i>Reload
+		</div>
+		<div class="item" id="squirrel">
+			<a href="find-the-squirrel/index.html">Go to 'Find the Squirrel'</a>
+		</div>
+		<div class="item" id="rps">
+			<a href="rock-paper-scissors/index.html">Go to 'Rock, Paper, Scissors'</a>
+		</div>
+		<div class="item" id="rps-l-s">
+			<a href="rps-lizard-spock/index.html">Go to 'Rock, Paper, Scissors, Lizard, Spock'</a>
+		</div>
+	</div>
+
+    <!-- JS -->
+    <script>
+		// if right-clicked
+		window.addEventListener("contextmenu", function(event) {
+			event.preventDefault();
+			var contextElement = document.getElementById("context-menu");
+			contextElement.style.top = event.offsetY + "px";
+			contextElement.style.left = event.offsetX + "px";
+			contextElement.classList.add("active");
+		});
+
+		// if not right-clicked
+		window.addEventListener("click", function() {
+			document.getElementById("context-menu").classList.remove("active");
+		});
+
+		// cache the DOM
+		var reload_element = document.getElementById("reload");
+		var squirrel_element = document.getElementById("squirrel");
+		var rps_element = document.getElementById("rps");
+		var rps2_element = document.getElementById("rps-l-s");
+
+		reload_element.onclick = function() {
+			location.reload();
+		};
+
+		squirrel_element.onclick = function() {
+			location.replace("https://aaditya-baduni.github.io/find-the-squirrel/index.html");
+		};
+
+		rps_element.onclick = function() {
+			location.replace("https://aaditya-baduni.github.io/rock-paper-scissors/index.html");
+		};
+
+		rps2_element.onclick = function() {
+			location.replace("https://aaditya-baduni.github.io/rps-lizard-spock/index.html");
+		};
+	</script>
 </body>
 </html>
