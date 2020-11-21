@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyOS | Aaditya's Website</title>
+<link rel="stylesheet" href="style.css"> <!-- Link the CSS -->
+<link rel="stylesheet" href="../right-click.css"> <!--Right click CSS-->
+<!-- Logo -->
+<link rel="icon" href="https://aaditya-baduni.github.io/logo.png">
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+    <!-- Link to main website -->
+    <div id="link-div">
+        <p id="link-para"><a href="https://aaditya-baduni.github.io" id="link">Aaditya's Games</a></p>
+    </div>
+
+    <h1 id="heading">MyOS 1 (Beta-version)</h1>
+    <p id="intro-para">Do you use MacOS? or Windows 10? Forget about that. Now, in your browser, you can experience the beta-version of MyOS here.</p>
+</header>
+
+<!-- The MyOS stuff -->
+<div id="myos">
+    <!-- The background image -->
+    <div id="background-div-myos">
+        <img src="background.jpg" alt="Pls load" id="background-image-myos">
+    </div>
+
+    <!-- The taskbar -->
+    <div id="taskbar">
+        <div id="start" class="btn">MyOS</div>
+        <div id="search">
+            <div><i id="search-icon">🔍</i><input type="text" placeholder="Type here to search" id="search-box"></div>
+        </div>
+        <!-- Apps like File Explorer, BrowseTheWeb etc. -->
+        <div id="apps">
+            <div id="fe" class="btn" style="color: white;">
+                FE
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The start menu -->
+<div id="start-menu" class="visibility">
+    <!-- All of the apps -->
+    <div id="browser" class="tile">
+        BrowseTheWeb
+    </div>
+    <div id="to-do" class="tile">
+        ToDo Reminders
+    </div>
+    <div id="news" class="tile">
+        News, Unbiased
+    </div>
+    <div id="chat" class="tile">
+        ChatOnTheGo
+    </div>
+    <div id="video" class="tile">
+        EditVideo
+    </div>
+    <br>
+    <div id="stream" class="tile">
+        Show Streamer
+    </div>
+    <div id="notes" class="tile">
+        MyOS Notes
+    </div>
+    <div id="weather" class="tile">
+        MyOS Weather
+    </div>
+    <div id="app-store" class="tile">
+        MyOS App Store
+    </div>
+    <div id="shop" class="tile">
+        MyShop
+    </div>
+</div>
+
+<!-- For right click functionality -->
+<div id="context-menu">
+    <div class="item" id="reload">
+        Reload
+    </div>
+    <div class="item">
+        <a href="https://aaditya-baduni.github.io/">Go to main page</a>
+    </div>
+    <div class="item">
+        <a href="https://aaditya-baduni.github.io/find-the-squirrel/">Go to 'Find the Squirrel'</a>
+    </div>
+    <div class="item">
+        <a href="https://aaditya-baduni.github.io/rock-paper-scissors/">Go to 'Rock, Paper, Scissors'</a>
+    </div>
+    <div class="item">
+        <a href="https://aaditya-baduni.github.io/rps-lizard-spock/">Go to 'Rock, Paper, Scissors, Lizard, Spock'</a>
+    </div>
+</div>
+
+<!-- Get the JS -->
+<script src="app.js"></script>
+<script src="../right-click.js"></script>
+
+</body>
+</html>
