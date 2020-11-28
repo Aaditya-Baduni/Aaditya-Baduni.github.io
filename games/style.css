@@ -1,0 +1,83 @@
+/* General stuff */
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+}
+a {
+    color: rgb(255, 100, 100);
+    text-decoration: none;
+    display: block;
+}
+a:hover {
+    color: rgb(255, 50, 50);
+}
+a:active {
+    color: rgb(100, 255, 100);
+}
+body {
+    background-color: rgb(31, 42, 53);
+    overflow-y: hidden;
+}
+
+/* Specifics */
+header {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+}
+header > p {
+    margin-top: 5px;
+}
+/* Sidebar code */
+#sidebar {
+    float: left;
+    height: 680px;
+    width: 30%;
+    font-size: 20px;
+}
+#sidebar:nth-child(1) {
+    margin-top: 173px;
+}
+#sidebar:nth-child(last) {
+    margin-bottom: 173px;
+}
+#sidebar > * {
+    margin: 5px;
+    margin-left: 30px;
+}
+/* the actual games */
+#games {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    height: 700px;
+    width: 70%;
+    overflow-y: scroll;
+    background-color: rgb(4, 88, 4);
+}
+.game {
+    height: 500px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 3px;
+    background-color: #676767;
+    color: white;
+    text-align: center;
+}
+.game > * {
+    margin: 5px;
+}
+.game > img {
+    height: 300px;
+    border-radius: 3px;
+}
+.game:hover {
+    cursor: pointer;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+}
