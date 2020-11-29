@@ -7,17 +7,23 @@ var MyOS_div = document.getElementById("MyOS");
 
 // onclick of those games, open them in a new tab
 rpsGame_div.onclick = function() {
-    window.open("https://aaditya-baduni.github.io/rock-paper-scissors/");
+    window.open("rock-paper-scissors/");
 }
 sounds_div.onclick = function() {
-    window.open("https://aaditya-baduni.github.io/teach-sounds/");
+    window.open("teach-sounds/");
 }
 squirrel_div.onclick = function() {
-    window.open("https://aaditya-baduni.github.io/find-the-squirrel/");
+    window.open("find-the-squirrel/");
 }
 rpslisp_div.onclick = function() {
-    window.open("https://aaditya-baduni.github.io/rps-lizard-spock/");
+    window.open("rps-lizard-spock/");
 }
 MyOS_div.onclick = function() {
-    window.open("https://aaditya-baduni.github.io/myOS/")
+    window.open("myOS/")
+}
+
+// all a tags to open in a new tab
+var a_tags = document.getElementsByTagName("a");
+for(var i = 0; i < a_tags.length; i++) {
+    a_tags[i].target = "_blank";
 }
