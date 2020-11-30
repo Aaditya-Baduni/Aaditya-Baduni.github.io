@@ -1,4 +1,4 @@
-var userName_cookie = document.cookie.split("; ").find(row => row.startsWith("username")).split("=")[1];
+var userName_cookie = document.cookie.split("; ").find(row => row.startsWith("username"))?.split("=")[1];
 
 function noUserName() {
     document.getElementById("known").style.display = "none"; // make sure that the known div is hidden
