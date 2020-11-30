@@ -4,7 +4,7 @@ function noUserName() {
     document.getElementById("known").style.display = "none"; // make sure that the known div is hidden
     document.getElementById("not-known").style.display = "block";
     document.getElementById("submit-btn").onclick = function() {
-        document.cookie = document.getElementById("enter-name").value;
+        document.cookie = "username=" + document.getElementById("enter-name").value + "; ";
         userNameKnown();
     }
 }
