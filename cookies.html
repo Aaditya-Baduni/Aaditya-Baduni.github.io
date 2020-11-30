@@ -14,9 +14,7 @@
         var name_input = document.getElementById("name");
         var submit_inputBtn = document.getElementById("submit");
         submit_inputBtn.onclick = function() {
-            document.cookie = "user_name=" + submit_inputBtn.value;
-            var cookie_values = document.cookie;
-            console.log(cookie_values);
+            document.cookie = "user_name=" + name_input.value;
         }
     </script>
 </body>
