@@ -32,7 +32,7 @@ function userNameKnown() {
     document.getElementById("known").style.display = "block";
 }
 
-if(userName_cookie == "") {
+if(userName_cookie === undefined) {
     noUserName();
 } else {
     userNameKnown();
