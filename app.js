@@ -11,6 +11,7 @@ function noUserName() {
 
 function userNameKnown() {
     document.getElementById("not-known").style.display = "none"; // make sure that the unknown div is hidden
+    document.getElementById("known").style.display = "block";
     // edit known div to show username
     document.getElementById("hello").innerText = `Hello, ${userName_cookie}`
     // time (good morning, good evening etc.)
@@ -31,4 +32,6 @@ function userNameKnown() {
 
 if(userName_cookie == "") {
     noUserName();
+} else {
+    userNameKnown();
 }
