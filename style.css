@@ -2,6 +2,7 @@
 
 * {
     color: white;
+    font-family: 'Asap', sans-serif;
 }
 
 body {
@@ -33,40 +34,31 @@ a:hover {
     font-family: 'Asap', sans-serif;
 }
 
-#games {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 1.0);
-    border: 10px ridge green;
-    margin-top: 50px;
-    width: 50%;
-    margin-left: 25%;
-    height: 200px;
-    opacity: 0.1;
-
-    transition: opacity;
-    transition-duration: 2s;
-    transition-timing-function: ease-in-out;
-}
-
-#games:hover {
-    cursor: pointer;
-}
-
-#games-para {
-    color: black;
-    margin-top: 50px;
-    font-size: 200%;
-    font-family: 'Asap', sans-serif;
-}
-
-#games:hover {
-    opacity: 1.0;
-}
-
 .link {
     margin-right: 20px;
     font-family: 'Asap', sans-serif;
     font-size: 20px;
+}
+
+/* Name, good morning */
+#not-known {
+    display: none;
+    text-align: center;
+    font-size: 40px;
+}
+#not-known > input {
+    color: black;
+    font-size: 30px;
+}
+
+#submit-btn:hover {
+    cursor: pointer;
+}
+
+#known {
+    font-size: 40px;
+    text-align: center;
+    display: none;
 }
 
 /* Scroll bar functionality */
