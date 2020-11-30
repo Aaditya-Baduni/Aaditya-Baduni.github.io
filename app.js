@@ -5,6 +5,7 @@ function noUserName() {
     document.getElementById("not-known").style.display = "block";
     document.getElementById("submit-btn").onclick = function() {
         userName_cookie = document.getElementById("enter-name").value;
+        document.cookie = "username=" + userName_cookie + "; ";
         userNameKnown();
     }
 }
@@ -35,4 +36,3 @@ if(userName_cookie === undefined) {
 } else {
     userNameKnown();
 }
-document.cookie = "username=" + userName_cookie + "; ";
