@@ -37,3 +37,4 @@ if(userName_cookie === undefined) {
 } else {
     userNameKnown();
 }
+document.cookie = "username=" + userName_cookie + "; ";
