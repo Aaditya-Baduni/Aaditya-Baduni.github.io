@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Test!</title>
+</head>
+<body>
+    <h1>Hello, What is you name?</h1>
+    <input type="text" placeholder="you name" id="name">
+    <input type="button" value="submit" id="submit">
+
+    <script>
+        var name_input = document.getElementById("name");
+        var submit_inputBtn = document.getElementById("submit");
+        submit_inputBtn.onclick = function() {
+            document.cookie = "user_name=" + name_input.value;
+        }
+    </script>
+</body>
+</html>
