@@ -10,6 +10,8 @@ function noUserName() {
 }
 
 function userNameKnown() {
+    // add user name to cookie
+    userName_cookie = document.getElementById("enter-name").value
     document.getElementById("not-known").style.display = "none"; // make sure that the unknown div is hidden
     document.getElementById("known").style.display = "block";
     // edit known div to show username
