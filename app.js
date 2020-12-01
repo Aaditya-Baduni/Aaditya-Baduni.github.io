@@ -1,38 +1,35 @@
-var userName_cookie = document.cookie.split("; ").find(row => row.startsWith("username"))?.split("=")[1];
+var notKnown_div = document.getElementById("not-known");
+var known_div = document.getElementById("known");
+var submitBtn_input = document.getElementById("submit-btn");
+var enterName_input = document.getElementById("enter-name");
+var hello_p = document.getElementById("hello");
+var time_p = document.getElementById("time");
 
-function noUserName() {
-    document.getElementById("known").style.display = "none"; // make sure that the known div is hidden
-    document.getElementById("not-known").style.display = "block";
-    document.getElementById("submit-btn").onclick = function() {
-        userName_cookie = document.getElementById("enter-name").value;
-        document.cookie = "username=" + userName_cookie + "; ";
-        userNameKnown();
+if(typeof(Storage) !== undefined) {
+    if(localStorage.getItem("username") == null) {
+        submitBtn_input.onclick = function() {
+            // hide not known div, set username in localStorage
+            notKnown_div.style.display = "none";
+            localStorage.setItem("username", enterName_input.value);
+            known_div.style.display = "block";
+            hello_p.innerText = "Hello, " + localStorage.getItem("username");
+        }
+    } else {
+        notKnown_div.style.display = "none";
+        hello_p.innerText = "Hello, " + localStorage.getItem("username");
+        known_div.style.display = "block";
     }
-}
-
-function userNameKnown() {
-    document.getElementById("not-known").style.display = "none"; // make sure that the unknown div is hidden
-    document.getElementById("known").style.display = "block";
-    // edit known div to show username
-    document.getElementById("hello").innerText = `Hello, ${userName_cookie}`
-    // time (good morning, good evening etc.)
+    // date and time stuff
     var date = new Date();
-    var hours = date.getHours();
-    if(hours < 12) {
-        document.getElementById("time").innerText = `Good Morning`;
-    } else if(hours == 12) {
-        document.getElementById("time").innerText = `Good Noon? or Afternoon, shall I say?`;
+    var time_hours = date.getHours();
+    if(time_hours < 12) {
+        time_p.innerText = "Good Morning";
+    } else if(time_hours >= 12 && time_hours <= 16) {
+        time_p.innerText = "Good Afternoon";
+    } else if(time_hours > 16) {
+        time_p.innerText = "Good Evening";
     }
-    else if(hours > 12 && hours <= 16) {
-        document.getElementById("time").innerText = `Good Afternoon`;
-    } else if(hours > 16) {
-        document.getElementById("time").innerText = `Good Evening`;
-    }
-    document.getElementById("known").style.display = "block";
-}
-
-if(userName_cookie === undefined) {
-    noUserName();
 } else {
-    userNameKnown();
+    notKnown_div.style.display = "none";
+    known_div.style.display = "none";
 }
