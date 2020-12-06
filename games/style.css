@@ -6,6 +6,25 @@
     box-sizing: border-box;
     font-family: 'Asap', sans-serif;
 }
+/* Link to main website */
+#link {
+    font-family: 'Asap', sans-serif;
+    float: left;
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    letter-spacing: -0.5px;
+    color: blue;
+}
+#link:hover {
+    color: red;
+}
+#link:active {
+    color: green;
+}
+
 a {
     color: rgb(255, 100, 100);
     text-decoration: none;
@@ -30,6 +49,9 @@ header {
 }
 header > p {
     margin-top: 5px;
+}
+header > h1 {
+    margin-right: 12.5%;
 }
 /* Sidebar code */
 #sidebar {
