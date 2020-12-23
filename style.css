@@ -43,3 +43,19 @@ a:hover {
 #website-title {
     font-size: 1.8rem;
 }
+
+/* Carousel */
+#carousel-one {
+    margin-top: 2%;
+}
+
+.carousel-img {
+    width: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    color: rgb(151, 151, 151);
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    color: rgb(255, 255, 255);
+}
