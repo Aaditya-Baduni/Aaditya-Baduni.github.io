@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQs</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../logo.png">
 </head>
+
 <body>
+    <a href="https://aaditya-baduni.github.io" class="navbar-brand">Aaditya's Website</a>
+    <h1>FAQs</h1>
 
-    <!-- Link to main website -->
-    <div id="link-div">
-        <p id="link-para"><a href="https://aaditya-baduni.github.io" id="link">Aaditya's Website</a></p>
-    </div>
+    <div class="container">
+        <button class="accordion">Why have I made this website? <img src="icon-arrow-down.svg" alt="arrow-down-image"
+                class="arrow-img"></button>
+        <div class="panel">
+            <p>Because I like doing this.</p>
+        </div>
 
-    <!-- The white FAQ div -->
-    <div id="faq-box">
-        <img src="https://hapdel.com/wp-content/uploads/2020/04/frequently-asked-questions.png" alt="FAQ image (nothing important)" id="faq-img">
-        <br>
-        <p id="faq">FAQ</p>
-        <!-- The questions -->
-        <div id="questions">
-            <p id="q1" class="q qna">Why have I made this website? ⬇</p> <br>
-            <p id="a1" class="a qna"></p> <br> <br>
-            <p id="q2" class="q qna">How many of my creations have I put into my website? ⬇</p> <br>
-            <p id="a2" class="a qna"></p> <br> <br>
-            <p id="q3" class="q qna">How long have I been programming? ⬇</p> <br>
-            <p id="a3" class="a qna"></p> <br> <br> <br> <br>
-            <p id="q4" class="q qna">How old am I? ⬇</p> <br>
-            <p id="a4" class="a qna"></p> <br>
+        <button class="accordion">How many webpages do I plan to have on my website? <img src="icon-arrow-down.svg"
+                alt="arrow-down-image" class="arrow-img"></button>
+        <div class="panel">
+            <p>As many as I want.</p>
+        </div>
+
+        <button class="accordion">How long have been making websites? <img src="icon-arrow-down.svg"
+                alt="arrow-down-image" class="arrow-img"></button>
+        <div class="panel">
+            <p>Even I don't know.</p>
+        </div>
+
+        <button class="accordion">What is my age? <img src="icon-arrow-down.svg" alt="arrow-down-image"
+                class="arrow-img"></button>
+        <div class="panel">
+            <p>It changes over time. So by the time you are viewing this webpage, it would be different.</p>
         </div>
     </div>
-
-    <!-- Link the JavaScript -->
     <script src="app.js"></script>
+
+    <!-- BootStrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
