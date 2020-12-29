@@ -104,16 +104,24 @@ header > h1 {
     box-shadow: 0 0 10px #25292B;
 }
 
+/* Link to website */
 #link {
-    font-family: 'Asap', sans-serif;
-    font-size: 25px;
     position: absolute;
-    top: 20px;
-    left: 30px;
+    margin-left: 1%;
+    margin-top: 1%;
+
+    font-family: "Asap", sans-serif;
     color: blue;
     text-decoration: none;
+    font-size: 1.5rem;
 }
-
 #link:hover {
     color: red;
+}
+
+/* Change stuff when size of screen is smaller */
+@media (max-width: 745px) {
+#link {
+    font-size: 1rem;
+}
 }
