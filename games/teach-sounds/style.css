@@ -1,95 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&display=swap');
-
-* {
-    box-sizing: border-box;
-}
+/* Import Asap Italics font */
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
 
 body {
-    background-image: url("piano.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
 }
 
-#heading {
-    text-align: center;
+/* Header */
+header > h1 {
+    font-family: "Asap", sans-serif;
     text-decoration: underline;
-    font-family: 'Asap', sans-serif;
-}
-
-#intro-para {
-    font-size: larger;
-}
-
-#keys {
-    width: 100%;
-    margin: auto;
-}
-
-.key {
-    width: 100px;
-    display: inline-block;
-    border: 4px solid white;
-    border-radius: 50%;
     text-align: center;
-    height: 100px;
-    margin-left: 100px;
-    font-size: 50px;
+    margin-top: 0.5%;
+    font-size: 2rem;
 }
 
+header > p {
+    margin: 1%;
+    margin-top: 3%;
+}
+
+/* Link to games page of my website */
+#link {
+    color: blue;
+    font-family: "Asap", sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    /* take it out of the HTML flow */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+}
+#link:hover {
+    color: red;
+}
+
+/* The sound stuff */
+.key {
+    width: 100%;
+    height: 500px;
+    /* display: inline-block; */
+    border: 4px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 3.125rem;
+    margin-left: 2%;
+}
 .key:hover {
-    border: 4px solid red;
-    font-size: 55px;
-    cursor: pointer;
-}
-
-.keyPressed {
-    border: 4px solid red;
-    font-size: 55px;
+    border: 4px solid white;
     cursor: pointer;
 }
 
 #dog {
     background-image: url("puppy.jpg");
-    height: 500px;
-    width: 500px;
-    padding-top: 60px;
+    background-size: 100% 100%;
 }
-
 #cat {
     background-image: url("https://thumbs-prod.si-cdn.com/d4e3zqOM5KUq8m0m-AFVxuqa5ZM=/800x600/filters:no_upscale():focal(554x699:555x700)/https://public-media.si-cdn.com/filer/a4/04/a404c799-7118-459a-8de4-89e4a44b124f/img_1317.jpg");
-    height: 500px;
-    width: 500px;
-    padding-top: 20px;
-    color: white;
+    background-size: 100% 100%;
 }
-
 #goat {
     background-image: url("https://www.cips.org/PageFiles/161907/goat%20770%20x%20400.jpg.ashx?width=600&height=315&mode=max");
-    height: 300px;
-    width: 570px;
-    padding-top: 20px;
-    color: black;
-    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-
 #pig {
     background-image: url("pig.png");
-    height: 1000px;
-    width: 1000px;
+    background-size: 100% 100%;
 }
 
+/* Change sizes when screen size is smaller */
+@media (max-width: 850px) {
 #link {
-    font-family: 'Asap', sans-serif;
-    font-size: 25px;
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    color: blue;
-    text-decoration: none;
+    font-size: 1rem;
+}
+header > h1 {
+    font-size: 1.5rem;
+}
 }
 
-#link:hover {
-    color: red;
+@media (max-width: 600px) {
+header > h1 {
+    text-align: right;
+    margin-right: 6%;
+}
 }
 
 /* Scroll bar functionality */

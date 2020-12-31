@@ -29,4 +29,3 @@ dog.addEventListener("click", () => stopAndPlayAudio(dog, dog_sound));
 cat.addEventListener("click", () => stopAndPlayAudio(cat, cat_sound));
 goat.addEventListener("click", () => stopAndPlayAudio(goat, goat_sound));
 pig.addEventListener("click", () => stopAndPlayAudio(pig, pig_sound));
-
