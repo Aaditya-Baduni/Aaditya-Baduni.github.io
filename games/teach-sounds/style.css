@@ -43,12 +43,10 @@ header > p {
 .key {
     width: 100%;
     height: 500px;
-    /* display: inline-block; */
     border: 4px solid black;
     border-radius: 10px;
     text-align: center;
     font-size: 3.125rem;
-    margin-left: 2%;
 }
 .key:hover {
     border: 4px solid white;
@@ -85,7 +83,6 @@ header > h1 {
 @media (max-width: 600px) {
 header > h1 {
     text-align: right;
-    margin-right: 6%;
 }
 }
 
