@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap'); /*Google Asap Italics font*/
 
+/* Vag Rounded Font */
+@font-face {
+    font-family: VagRounded;
+    src: url("VAG-Rounded-Regular.woff") format("woff");
+}
+
 * {
     color: white;
-    font-family: 'Asap', sans-serif;
 }
 
 body {
     background-color: black;
     user-select: none;
+    overflow: auto;
 }
 
 /* Name, good morning */
@@ -15,10 +21,12 @@ body {
     display: block;
     text-align: center;
     font-size: 40px;
+    font-family: 'Asap', sans-serif;
 }
 #not-known > input {
     color: black;
     font-size: 30px;
+    font-family: 'Asap', sans-serif;
 }
 
 #submit-btn:hover {
@@ -29,6 +37,7 @@ body {
     font-size: 40px;
     text-align: center;
     display: none;
+    font-family: 'Asap', sans-serif;
 }
 
 a:hover {
@@ -37,11 +46,22 @@ a:hover {
 
 .link {
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #website-title {
     font-size: 1.8rem;
+    color: yellow;
+    font-family: VagRounded, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* The logo image shown next to the Website Title */
+#logo-img {
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 /* Carousel */
@@ -74,7 +94,12 @@ a:hover {
     border-radius: 10px;
 }
 
-.row {
-    margin-right: 1%;
-    margin-left: 1%;
+/* For different screen sizes */
+@media (max-width: 620px) {
+#logo-img {
+    height: 50px;
+}
+#website-title {
+    font-size: 1.4rem;
+}
 }
