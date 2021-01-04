@@ -1,0 +1,5 @@
+/* Vag Rounded Font */
+@font-face {
+    font-family: VagRounded;
+    src: url("VAG-Rounded-Regular.woff") format("woff");
+}
