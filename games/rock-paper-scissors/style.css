@@ -125,3 +125,9 @@ header > h1 {
     font-size: 1rem;
 }
 }
+
+.score-and-result {
+    position: sticky;
+    top: 0;
+    background-color: #292C34;
+}
