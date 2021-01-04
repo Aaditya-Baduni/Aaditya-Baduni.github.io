@@ -80,20 +80,6 @@ a:hover {
     color: rgb(255, 255, 255);
 }
 
-/* For scrollbar functionality */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(184, 183, 183);
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(100, 100, 100);
-    border-radius: 10px;
-}
-
 /* For different screen sizes */
 @media (max-width: 620px) {
 #logo-img {
