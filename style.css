@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(22, 27, 32);
     user-select: none;
     overflow: auto;
 }
@@ -39,6 +39,8 @@ body {
     display: none;
     font-family: 'Asap', sans-serif;
 }
+
+#known, #not-known {margin-top: 2%;}
 
 a:hover {
     text-decoration: none;
@@ -88,4 +90,8 @@ a:hover {
 #website-title {
     font-size: 1.4rem;
 }
+}
+
+.carousel-item:hover {
+    cursor: pointer;
 }
