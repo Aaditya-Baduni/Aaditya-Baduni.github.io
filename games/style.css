@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital@0;1&display=swap');
+/* Import Vag Rounded font */
+@import url("https://aaditya-baduni.github.io/vag-rounded-font.css"); 
 
 a:hover {
     text-decoration: none;
@@ -54,4 +56,19 @@ body {
 .row {
     margin-right: 1%;
     margin-left: 1%;
+}
+
+/* Link to main website */
+#website-title {
+    font-size: 1.8rem;
+    color: yellow;
+    font-family: VagRounded, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* The logo image shown next to the Website Title */
+#logo-img {
+    border: 1px solid white;
+    border-radius: 5px;
 }
