@@ -1,19 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap'); /*Google Asap Italics font*/
+/* Import Vag Rounded font */
+@import url("https://aaditya-baduni.github.io/vag-rounded-font.css");
 
-/* Vag Rounded Font */
-@font-face {
-    font-family: VagRounded;
-    src: url("VAG-Rounded-Regular.woff") format("woff");
+nav {
+    margin: 2%;
 }
 
-* {
-    color: white;
+a:hover {
+    text-decoration: none;
 }
 
-body {
-    background-color: rgb(22, 27, 32);
-    user-select: none;
-    overflow: auto;
+/* Background image */
+#background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Header */
+.logo-pic {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#website-name {
+    font-size: 1.8rem;
+    color: blue;
+    font-family: VagRounded, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-item {
+    font-size: 1.25rem;
+    margin-left: 30px;
+}
+
+.nav-item > a {
+    color: black;
+}
+
+.nav-item > a:hover {
+    color: blue;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+    margin-right: 10%;
+}
+
+/* Bootstrap Carousel */
+#carousel-one {
+    margin-top: 20%;
+}
+
+.carousel-img {
+    width: 100%;
+}
+
+.carousel-item:hover {
+    cursor: pointer;
+}
+
+/* Scroll bar functionality */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
 }
 
 /* Name, good morning */
@@ -42,56 +105,45 @@ body {
 
 #known, #not-known {margin-top: 2%;}
 
-a:hover {
-    text-decoration: none;
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+body {
+    background-color: black;
 }
 
-.link {
-    margin-left: 20px;
-    font-size: 1.25rem;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-#website-title {
-    font-size: 1.8rem;
+#website-name {
     color: yellow;
-    font-family: VagRounded, sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
 }
 
-/* The logo image shown next to the Website Title */
-#logo-img {
-    border: 1px solid white;
-    border-radius: 5px;
+/* Change navbar toggler icon */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* Carousel */
-#carousel-one {
-    margin-top: 2%;
+.nav-item > a {
+    color: white;
 }
 
-.carousel-img {
-    width: 100%;
+/* Name, Good ${time} */
+#not-known {
+    color: white;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    color: rgb(151, 151, 151);
-}
-.carousel-control-prev:hover, .carousel-control-next:hover {
-    color: rgb(255, 255, 255);
+#known {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* For different screen sizes */
-@media (max-width: 620px) {
-#logo-img {
-    height: 50px;
+/* Scroll bar functionality */
+::-webkit-scrollbar {
+    width: 5px;
 }
-#website-title {
-    font-size: 1.4rem;
-}
+::-webkit-scrollbar-thumb {
+    background: rgb(184, 183, 183);
+    border-radius: 10px;
 }
 
-.carousel-item:hover {
-    cursor: pointer;
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+}
 }
