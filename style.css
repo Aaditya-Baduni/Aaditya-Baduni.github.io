@@ -147,3 +147,7 @@ body {
     background: rgb(100, 100, 100);
 }
 }
+
+.nav-item > a:hover {
+    color: rgb(0, 130, 252);
+}
