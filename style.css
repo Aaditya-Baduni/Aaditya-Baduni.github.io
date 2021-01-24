@@ -103,7 +103,7 @@ a:hover {
     font-family: 'Asap', sans-serif;
 }
 
-#known, #not-known {margin-top: 2%;}
+#known, #not-known {margin-top: 4%;}
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
