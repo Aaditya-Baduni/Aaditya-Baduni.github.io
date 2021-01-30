@@ -33,14 +33,14 @@ fe.onmouseover = function() {
     fe.style.fontSize = "15px";
     fe.style.paddingTop = "7px";
     fe.style.color = "black";
-}
+};
 fe.onmouseout = function() {
     fe.innerText = "FE";
     fe.style.fontSize = "25px";
     fe.style.paddingTop = "2px";
     fe.style.color = "white";
-}
-fe.onclick = function() {alert("Apps are not available in Beta Version");}
+};
+fe.onclick = function() {alert("Apps are not available in Beta Version");};
 
 // detect any change in value of the search box
 setInterval(changeInValue, 1000);
@@ -60,12 +60,12 @@ myOS_div.onclick = function() {
     if(startMenu.classList == "") {
         startMenu.classList.add("m-fadeOut");
     }
-}
+};
 
 // apps are not available in Beta-version!
 var tiles = document.getElementsByClassName("tile");
 for(var i = 0; i < tiles.length; i++) {
-    tiles[i].onclick = function() {
-        alert("Apps are not available in Beta-version!")
-    }
+    tiles[i].onclick = function() { // jshint ignore:line
+        alert("Apps are not available in Beta-version!");
+    };
 }
