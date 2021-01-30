@@ -37,6 +37,8 @@ body {
 .card-text {
     text-align: center;
     color: white;
+    margin-top: 2%;
+    font-size: 1.5rem;
 }
 
 .games-img {
