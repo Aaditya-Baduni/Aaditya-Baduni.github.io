@@ -51,7 +51,7 @@ function right() {
         if (restart) {
             location.reload();
         } else {
-            return;
+            location.href = 'https://aaditya-baduni.github.io/games/';
         }
     }
 
@@ -75,7 +75,7 @@ function wrong() {
         if (restart) {
             location.reload();
         } else {
-            return;
+            location.href = 'https://aaditya-baduni.github.io/games/';
         }
     }
 
