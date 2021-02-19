@@ -1,0 +1,130 @@
+/* Import Vag Rounded font */
+@import url("https://aaditya-baduni.github.io/vag-rounded-font.css");
+
+body {
+    background-color: rgb(44, 63, 83);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Link to main website */
+#link {
+    font-family: VagRounded, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: yellow;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1%;
+}
+
+#logo {
+    border-radius: 3px;
+}
+
+/* Header */
+header > h1 {
+    text-align: center;
+    margin: 1%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Scoreboard */
+#score-board {
+    width: 30%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    top: 0;
+    position: sticky;
+    background-color: rgb(44, 63, 83);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#score-p {
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* Dog image */
+#dog-img {
+    border-radius: 5px;
+    height: 50%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 5px 10px 10px 15px rgb(43, 50, 65);
+}
+
+/* Options (buttons) */
+#options-div {
+    text-align: center;
+}
+
+#options-div > div {
+    margin: 1%;
+}
+
+#options-one > button:nth-child(2), #options-two > button:nth-child(2) {
+    margin-left: 0.5%;
+}
+
+/* Custom Scroolbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(184, 183, 183);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+}
+
+/* Different Screen Size */
+@media(max-width: 1050px) {
+#link {
+    position: static;
+    margin-top: 1%;
+    margin: 1%;
+    font-size: 1.5rem;
+}
+header > h1 {
+    margin: 0.5%;
+}
+
+#options-div {
+    margin: 5%;
+}
+#options-div > div {
+    margin: 2%;
+}
+#options-one > button:nth-child(2), #options-two > button:nth-child(2) {
+    margin-left: 1%;
+}
+
+#score-board {
+    width: 100%;
+}
+}
+
+/* Animations */
+.right {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
