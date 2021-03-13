@@ -1,0 +1,133 @@
+/* Import Vag Rounded font */
+@import url("../vag-rounded-font.css");
+
+body {
+    background-color: rgb(44, 63, 83);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Header */
+
+#link {
+    font-family: VagRounded, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    color: yellow; /* ? change the color of the main link according to the colour of the background */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+#logo {
+    border-radius: 3px;
+}
+
+header > h1 {
+    text-align: center;
+    margin-top: 0.5%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+
+/* Timer */
+#timer {
+    /* Center align it */
+    width: 50%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#time-p {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-right: 1%;
+}
+
+#start-reset-btns > button {
+    margin-left: 1%;
+}
+
+/* Edit timer */
+#edit {
+    margin-top: 4%;
+    text-align: center;
+}
+
+#edit > h1 {
+    text-align: center;
+    color: rgb(200, 200, 200);
+    font-size: 2rem;
+}
+
+.edit-divs {
+    display: inline-block;
+}
+
+.edit-divs > input {
+    border-radius: 3px;
+}
+
+.edit-divs > p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.edit-divs > p, .edit-divs > input {
+    display: inline-block;
+}
+
+#hrs-div, #mins-div, #secs-div {
+    margin-left: 1%;
+}
+
+#done-btn {
+    margin-left: 15px;
+}
+
+/* Change style if screen size is smaller */
+@media (max-width: 860px) {
+    #link {
+        position: static;
+        margin-bottom: 0%;
+        font-size: 1.5rem;
+    }
+
+    header > h1 {
+        margin-top: 0%;
+    }
+}
+
+@media (max-width: 950px) {
+    #edit {
+        margin-top: 8%;
+    }
+
+    .edit-divs {
+        display: block;
+        text-align: center;
+    }
+    #hrs-div {
+        margin-left: -15px;
+    }
+    #done-btn {
+        width: 79px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
