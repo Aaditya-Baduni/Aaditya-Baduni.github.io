@@ -52,6 +52,6 @@ function goToURL(url) {
 // on click of the images
 squirrelCarousel_div.addEventListener("click", () => goToURL("https://aaditya-baduni.github.io/games/find-the-squirrel/"));
 rpsCarousel_div.addEventListener("click", () => goToURL("https://aaditya-baduni.github.io/games/rock-paper-scissors/"));
-teachSoundsCarousel_div.addEventListener("click", () => goToURL("https://aaditya-baduni.github.io/games/teach-sounds/"));
-faqCarousel_div.addEventListener("click", () => goToURL("https://aaditya-baduni.github.io/faq/"));
-aboutMeCarousel_div.addEventListener("click", () => goToURL("https://aaditya-baduni.github.io/about-me/"));
+teachSoundsCarousel_div.addEventListener("click", () => goToURL("https://aaditya-baduni.github.io/other/teach-sounds/"));
+faqCarousel_div.addEventListener("click", () => goToURL("https://aaditya-baduni.github.io/other/faq/"));
+aboutMeCarousel_div.addEventListener("click", () => goToURL("https://aaditya-baduni.github.io/other/about-me/"));
