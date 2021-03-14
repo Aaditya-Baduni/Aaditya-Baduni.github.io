@@ -1,3 +1,104 @@
+@import url("https://aaditya-baduni.github.io/vag-rounded-font.css");
 body {
     background-color: rgb(44, 63, 83);
+    overflow-x: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+header {
+    border-bottom: 2.5px solid white;
+    background-color: rgb(34, 49, 65);
+    padding: 0.5%;
+}
+
+#link {
+    font-family: VagRounded, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+#logo {
+    border-radius: 3px;
+}
+
+header>h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+header>p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+/* The Apps / Pages */
+.card {
+    margin: 3%;
+}
+
+.card-header {
+    border-bottom: 2px solid black;
+}
+
+.card-header > h3 {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.images {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.card-text {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0.4%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(184, 183, 183);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+}
+
+/* For different screen sizes */
+
+@media (max-width: 1010px) {
+    #link {
+        position: static;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+    header>h1 {
+        margin-top: -10px;
+    }
 }
