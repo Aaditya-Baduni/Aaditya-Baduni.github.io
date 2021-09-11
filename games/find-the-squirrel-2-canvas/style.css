@@ -1,0 +1,104 @@
+/* Import Vag Rounded and Merriweather font */
+@import url("https://aaditya-baduni.github.io/vag-rounded-font.css");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap");
+
+* {
+    color: white;
+}
+
+body {
+    background-color: rgb(31, 42, 53);
+}
+
+header {
+    padding: 0.5%;
+    border-bottom: 2px solid white;
+    margin-bottom: 3%;
+}
+
+header > a {
+    position: absolute;
+}
+
+#logo {
+    border-radius: 2.5px;
+}
+
+#website-name{
+    font-family: VagRounded, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(229, 255, 0);
+}
+#website-name:hover {
+    color: rgb(200, 200, 0);
+}
+
+#title {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    margin-top: 0.5%;
+    font-size: 2.5rem;
+}
+
+#title-description {
+    text-align: center;
+    margin-top: 1%;
+}
+
+/* Score board */
+#scoreboard {
+    width: 25%;
+    background-color: white;
+    color: black;
+
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    border-radius: 5px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+    margin-bottom: 3%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Background color changes according to user score */
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(150, 150, 150);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+/* Images shouldnt be displayed */
+#squirrel-img, #tree-img {
+    display: none;
+}
+
+/* Different screen sizes optimization */
+@media (max-width: 960px) {
+    header > a {
+        position: static;
+    }
+}
+@media (max-width: 780px) {
+    #title-description {
+        line-height: 150%;
+    }
+}
