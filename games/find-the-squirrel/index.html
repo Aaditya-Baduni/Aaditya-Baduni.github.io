@@ -1,49 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="uft-8">
-        <title>Find the squirrel!</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="../../logo.png">
-    </head>
-    <body>
-        <header id="header">
+<html lang="en">
 
-            <!-- Link to main website -->
-            <div id="link-div">
-                <p id="link-para"><a href="https://aaditya-baduni.github.io/games/" id="link">Aaditya's Games</a></p>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Squirrel! | Aaditya's Website</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://aaditya-baduni.github.io/logo.png">
+</head>
 
-            <h1 id="heading">Find the Squirrel!</h1>
-            <p id="intro">
-                There is a squirrel hiding in between those branches! Click on it and you will score points! <br>
-                As soon as you click somewhere, a new squirrel will appear! There will be only 5 squirrels.
-            </p>
-        </header>
+<body>
+    <header>
+        <a href="https://aaditya-baduni.github.io/games/" class="navbar-brand">
+            <img src="https://aaditya-baduni.github.io/logo.png" alt="logo" id="logo">
+            <span id="website-name">Aaditya's Games</span>
+        </a>
 
-        <!-- The scoreboard -->
-        <div id="score-board">
-            <p id="score">
-                <span id="user-score">0</span>/<span id="total-score">5</span> squirrels caught
-            </p>
-            <p id="result">
-                Find the squirrel!
-            </p>
-        </div>
+        <h1 id="title">Find the Squirrel!</h1>
+        <p id="title-description">
+            There is a squirrel hiding in between those branches! Click on it and you will score points! <br>
+            As soon as you click somewhere, a new squirrel will appear! There will be only 5 squirrels.
+        </p>
+    </header>
 
-        <!-- The tree image is very important -->
-        <div id="the-game">
-            <img src="https://api.time.com/wp-content/uploads/2018/05/forest-bathing.jpg" alt="Tree" id="tree-img">
+    <!-- Scoreboard -->
+    <div id="scoreboard">
+        <span id="score">Score: 0/5</span>
+        <input type="button" class="btn btn-success" id="restart-btn" value="Restart">
+    </div>
 
-            <!-- Squirrel images -->
-            <img src="https://assets.stickpng.com/images/580b57fbd9996e24bc43bcef.png" alt="pls load this image to see the squirrel" class="squirrel" id="squirrel-1">
-            <img src="https://assets.stickpng.com/images/580b57fbd9996e24bc43bcef.png" alt="pls load this image to see the squirrel" class="squirrel" id="squirrel-2">
-            <img src="https://assets.stickpng.com/images/580b57fbd9996e24bc43bcef.png" alt="pls load this image to see the squirrel" class="squirrel" id="squirrel-3">
-            <img src="https://assets.stickpng.com/images/580b57fbd9996e24bc43bcef.png" alt="pls load this image to see the squirrel" class="squirrel" id="squirrel-4">
-            <img src="https://assets.stickpng.com/images/580b57fbd9996e24bc43bcef.png" alt="pls load this image to see the squirrel" class="squirrel" id="squirrel-5">
-        </div>
+    <!-- Center align the canvas -->
+    <p style="text-align: center;">
+        <canvas id="canvas"></canvas>
+    </p>
+    <!-- Squirrel and tree images - hidden (using CSS) and displayed only on the canvas -->
+    <img src="squirrel.png" alt="Squirrel" id="squirrel-img">
+    <img src="trees.jpg" alt="Trees-background" id="tree-img">
 
-        <!-- JavaScript -->
-        <script src="app.js"></script>
-    </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="canvas.js"></script>
+</body>
+
 </html>
