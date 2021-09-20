@@ -65,6 +65,13 @@ header > a {
     margin-right: auto;
     margin-left: auto;
 }
+#score {
+    color: black;
+}
+
+canvas:hover {
+    cursor: pointer;
+}
 
 /* Background color changes according to user score */
 .green {

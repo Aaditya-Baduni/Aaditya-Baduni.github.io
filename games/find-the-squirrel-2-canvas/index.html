@@ -29,12 +29,15 @@
 
     <!-- Scoreboard -->
     <div id="scoreboard">
-        Score: 0/5
+        <span id="score">Score: 0/5</span>
+        <input type="button" class="btn btn-success" id="restart-btn" value="Restart">
     </div>
 
+    <!-- Center align the canvas -->
     <p style="text-align: center;">
         <canvas id="canvas"></canvas>
     </p>
+    <!-- Squirrel and tree images - hidden (using CSS) and displayed only on the canvas -->
     <img src="squirrel.png" alt="Squirrel" id="squirrel-img">
     <img src="trees.jpg" alt="Trees-background" id="tree-img">
 
