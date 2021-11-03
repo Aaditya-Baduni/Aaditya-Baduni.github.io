@@ -8,34 +8,6 @@ var hello_p = document.getElementById("hello");
 var time_p = document.getElementById("time");
 
 if (typeof (Storage) !== undefined) {
-    // for the user's name
-    if (localStorage.getItem("username") == null) {
-        submitBtn_input.onclick = function () {
-            // hide not known div, set username in localStorage
-            notKnown_div.style.display = "none";
-            localStorage.setItem("username", enterName_input.value);
-            known_div.style.display = "block";
-            hello_p.innerText = "Hello, " + localStorage.getItem("username");
-        }
-    } else {
-        notKnown_div.style.display = "none";
-        hello_p.innerText = "Hello, " + localStorage.getItem("username");
-        known_div.style.display = "block";
-    }
-
-    // for the welcome screen
-    if (localStorage.getItem("visited") == "false" || localStorage.getItem("visited") == null) {
-        localStorage.setItem("visited", "true");
-        // date
-        var d = new Date();
-        localStorage.setItem("lastDateVisited", d.getTime());
-    } else if (localStorage.getItem("visited") == "true") {
-        var lastDateVisited = localStorage.getItem("lastDateVisited");
-        var currentDate = new Date().getTime();
-        if ((lastDateVisited + (30 * 24 * 60 * 60 * 1000)) <= currentDate) {
-            localStorage.setItem("visited", "false");
-        }
-    }
     // date and time stuff
     var date = new Date();
     var time_hours = date.getHours();
@@ -74,25 +46,15 @@ aboutMeCarousel_div.addEventListener("click", () => goToURL("https://aaditya-bad
 // Welcome screen
 var welcome_div = document.getElementById("welcome");
 var continue_btn = document.getElementById("continue");
-var visited = localStorage.getItem("visited");
 
-if (visited == "true") {
-    welcome_div.style.height = "0%";
-    welcome_div.style.width = "0%";
-    welcome_div.style.display = "none";
-} else {
-    continue_btn.onclick = function () {
-        var opacity = 1;
-        var opa = setInterval(() => {
-            if (opacity > 0.0) {
-                opacity -= 0.1;
-                welcome_div.style.opacity = opacity.toString();
-            } else {
-                clearInterval(opa);
-                welcome_div.style.height = "0%";
-                welcome_div.style.width = "0%";
-                welcome_div.style.display = "none";
-            }
-        }, 20);
-    };
+continue_btn.onclick = function() {
+    var opacity = 1.0;
+    var interval = setInterval(() => {
+        if(opacity > 0.0) {
+            opacity -= 0.1;
+            welcome_div.style.opacity = opacity;
+        } else {
+            clearInterval(interval);
+        }
+    }, 20);
 }
