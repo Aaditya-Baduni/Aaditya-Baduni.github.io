@@ -54,6 +54,7 @@ continue_btn.onclick = function() {
             opacity -= 0.1;
             welcome_div.style.opacity = opacity;
         } else {
+            welcome_div.style.display = "none";
             clearInterval(interval);
         }
     }, 20);
