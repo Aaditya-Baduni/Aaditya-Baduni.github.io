@@ -7,6 +7,9 @@ var enterName_input = document.getElementById("enter-name");
 var hello_p = document.getElementById("hello");
 var time_p = document.getElementById("time");
 
+known_div.style.display = "block";
+notKnown_div.style.display = "block";
+
 function showDate() {
     // date and time stuff
     var date = new Date();
@@ -20,14 +23,7 @@ function showDate() {
     }
 }
 
-if (typeof (Storage) !== undefined) {
-    // name and stuff
-    if (localStorage.getItem("username") !== '' || localStorage.getItem("username") !== undefined) {
-        notKnown_div.style.display = "none";
-        hello_p.innerText = localStorage.getItem("username");
-        showDate();
-    }
-} else {
+function notKnown() {
     known_div.style.display = "none";
     submitBtn_input.onclick = function () {
         localStorage.setItem("username", enterName_input.value);
@@ -37,6 +33,19 @@ if (typeof (Storage) !== undefined) {
         hello_p.innerText = localStorage.getItem("username");
         showDate();
     };
+}
+
+if (typeof (Storage) !== undefined) {
+    // name and stuff
+    if (localStorage.getItem("username") !== '' || localStorage.getItem("username") !== undefined || localStorage.getItem("username") !== null) {
+        notKnown_div.style.display = "none";
+        hello_p.innerText = `Henlo, ${localStorage.getItem("username")}`;
+        showDate();
+    } else {
+        notKnown();
+    }
+} else {
+    notKnown();
 }
 
 // go to these links when the images on the carousel are clicked
