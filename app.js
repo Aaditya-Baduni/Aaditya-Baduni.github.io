@@ -7,7 +7,7 @@ var enterName_input = document.getElementById("enter-name");
 var hello_p = document.getElementById("hello");
 var time_p = document.getElementById("time");
 
-if (typeof (Storage) !== undefined) {
+function showDate() {
     // date and time stuff
     var date = new Date();
     var time_hours = date.getHours();
@@ -18,9 +18,25 @@ if (typeof (Storage) !== undefined) {
     } else if (time_hours > 16) {
         time_p.innerText = "Good Evening";
     }
+}
+
+if (typeof (Storage) !== undefined) {
+    // name and stuff
+    if (localStorage.getItem("username") !== '' || localStorage.getItem("username") !== undefined) {
+        notKnown_div.style.display = "none";
+        hello_p.innerText = localStorage.getItem("username");
+        showDate();
+    }
 } else {
-    notKnown_div.style.display = "none";
     known_div.style.display = "none";
+    submitBtn_input.onclick = function () {
+        localStorage.setItem("username", enterName_input.value);
+        notKnown_div.style.display = "none";
+
+        known_div.style.display = "block";
+        hello_p.innerText = localStorage.getItem("username");
+        showDate();
+    };
 }
 
 // go to these links when the images on the carousel are clicked
@@ -47,10 +63,10 @@ aboutMeCarousel_div.addEventListener("click", () => goToURL("https://aaditya-bad
 var welcome_div = document.getElementById("welcome");
 var continue_btn = document.getElementById("continue");
 
-continue_btn.onclick = function() {
+continue_btn.onclick = function () {
     var opacity = 1.0;
     var interval = setInterval(() => {
-        if(opacity > 0.0) {
+        if (opacity > 0.0) {
             opacity -= 0.1;
             welcome_div.style.opacity = opacity;
         } else {
