@@ -34,7 +34,7 @@ h1 {
 
 .container {
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 5s;
 }
 
 body.loaded .container {
