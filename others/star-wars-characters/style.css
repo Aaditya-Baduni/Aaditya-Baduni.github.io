@@ -1,0 +1,104 @@
+/* Import VagRounded font */
+@import url("https://aaditya-baduni.github.io/vag-rounded-font.css");
+
+#website-title {
+    position: absolute;
+    left: 2%;
+    top: 2.5%;
+}
+
+#website-name {
+    font-size: 1.8rem;
+    color: rgb(255, 255, 0);
+    font-family: VagRounded, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#website-name:hover {
+    color: rgb(210, 210, 0);
+}
+
+.logo-pic {
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 40px;
+}
+
+body {
+    background-color: #205375;
+}
+
+header {
+    background-color: #112B3C;
+    color: white;
+    padding: 1.5%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Generate other characters button */
+#generate-button {
+    background-color: #f8904b;
+    margin: 2%;
+    margin-top: 1%;
+}
+#generate-button:hover {
+    background-color: #F66B0E;
+}
+
+/* Star Wars characters div */
+#characters-container > div {
+    background-color: #EFEFEF;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1%;
+}
+
+#characters-container > div > img {
+    border-radius: 5px;
+    object-fit: contain;
+}
+#characters-container > div > p {
+    margin-top: 10px;
+}
+
+/* Changing website-name (link to main website's) when screen size is smaller */
+@media (max-width: 1192px) {
+    #website-title {
+        top: 1.5%;
+    }
+    #website-name {
+        font-size: 1.4rem;
+    }
+    h1 {
+        margin-top: 1%;
+    }
+    h1::before { /* Adding a line before the main title */
+        content: "\a";
+        white-space: pre;
+    }
+}
+
+@media (max-width: 775px) {
+    header {
+        padding: 2.5%;
+    }
+    #generate-button {
+        margin: 3%;
+        margin-top: 2%;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(184, 183, 183);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+}
