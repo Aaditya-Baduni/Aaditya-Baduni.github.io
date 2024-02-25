@@ -1,0 +1,103 @@
+/* Import Vag Rounded font */
+@import url("https://aaditya-baduni.github.io/vag-rounded-font.css");
+
+body {
+    background-color: rgb(44, 63, 83);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    margin-top: 2%;
+}
+
+#link {
+    font-family: VagRounded, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    color: yellow;
+    /* ? change the color of the main link according to the colour of the background */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+}
+
+#logo {
+    border-radius: 3px;
+}
+
+header>h1 {
+    text-align: center;
+    margin-top: 0.5%;
+    margin-bottom: 5%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+
+/* All the charts */
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(0% 60% 0% 50%);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+canvas {
+    animation: auto linear reveal both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+    background: rgb(85, 122, 162);
+
+    margin: auto;
+    margin-bottom: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* box-shadow: 0 0 100px #666; */
+    border-radius: 10px;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(157, 143, 143);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(120, 110, 110);
+}
+
+@media (max-width:1300px) {
+    #link {
+        position: static;
+        margin-bottom: 0
+    }
+
+    #title {
+        margin-top: 1%
+    }
+}
