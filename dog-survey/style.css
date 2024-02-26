@@ -108,3 +108,7 @@ canvas {
     margin: auto;
     border-radius: 10px;
 }
+
+body.loaded .container {
+    opacity: 1;
+}
